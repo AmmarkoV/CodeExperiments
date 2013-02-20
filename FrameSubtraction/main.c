@@ -10,7 +10,7 @@ int SubtractImages(char * imageA,char *imageB,unsigned int elements)
     char * imageB_Ptr = imageB;
     while (imageA_Ptr<imageA_Limit)
     {
-        if (*imageA_Ptr>*imageB_Ptr)
+        if (*imageA_Ptr>=*imageB_Ptr)
         {
             *imageA_Ptr-=*imageB_Ptr;
         }
